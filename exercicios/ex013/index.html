@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídia em HTML5</title>
+    <link rel="shortcut icon" href="Gartoon-Team-Gartoon-Places-Folder-pictures.64.png" type="image/x-icon">
+</head>
+<body>
+        <h1>Imagens Dinâmicas</h1>
+        <hr>
+        <p>Tente abrir esse site com diversos aparelhos diferentes</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível" width="50%">
+    </picture>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/minhaimagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/minhaimagem-m.png" type="image/png">
+        <img src="imagens/minhaimagem-g.png" alt="" width="50%">
+    </picture>
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos reproduzir audios em HMTL5</p>
+    <audio src="midia/happy-mistake.mp3" controls autoplay></audio>
+    <!--PARA TER COMPATIBILIDADE 100% COM TODOS OS NAVEGADORES, UTILIZAR ESSES ARQUIVOS DE AUDO:MP3 WAV OGG-->
+    <h2>PODCAST DO GUSTAVAO</h2>
+        <p>Escute conosco o Grande Gustavo Guanabara em seu podcast</p>
+    <audio preload="metadata" controls>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não é compatível com os audios desejados. <a href="midia/guanacast-33.mp3" download="midia/guanacast-33.mp3" type="audio/mpeg">Clique aqui para baixar o arquivo de audio</a></p>
+    </audio>
+
+
+</body>
+</html>
