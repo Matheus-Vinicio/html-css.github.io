@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABELAS</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        size: 100vh;
+    }
+    body {
+        background: linear-gradient(45deg, #ffa600, #55d6e7);
+        display: flex;
+        font-family: Arial, sans-serif;
+    }
+    table {
+        display: flex;
+        border-collapse: collapse;
+        background-color: #ffffff;
+        padding: 10px;
+        border: 5px solid black;
+
+    }
+    table, th,:hover{
+        padding: 14px;
+        transition: 0.5s;
+        overflow-y: hidden;
+    }
+    th, td {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #ccc;
+    }
+    th {
+        background-color: #4CAF50;
+        color: white;
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    .tracker{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        }
+</style>
+</head>
+
+<body>
+    
+    <div class="tracker">
+        <table>
+            <th>ESTADO</th>
+            <th>POPULAÇÃO</th>
+                <tr>
+                    <td>PARANÁ</td>
+                    <td>510.000</td>
+                </tr>
+                <tr>
+                    <td>RIO DE JANEIRO</td>
+                    <td>1.200.000</td>
+                </tr>
+                <tr>
+                    <td>MINAS GERAIS</td>
+                    <td>1.500.000</td>
+                </tr>
+                <tr>
+                    <td>BAHIA</td>
+                    <td>1.000.000</td>
+                </tr>
+                <tr>
+                    <td>CEARÁ</td>
+                    <td>1.200.000</td>
+                </tr>
+                <tr>
+                    <td>PARAÍBA</td>
+                    <td>1.000.000</td>
+                </tr>
+                <tr>
+                    <td>ALAGOAS</td>
+                    <td>1.000.000</td>
+                </tr>
+        </table>
+    </div>
+
+</body>
+</html>
